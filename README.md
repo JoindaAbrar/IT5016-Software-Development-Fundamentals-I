@@ -111,7 +111,7 @@ The design is simple but effective, showing how OOP helps structure code in a cl
 This project serves as a foundational example of how software design principles guide the creation of clean, organized, and scalable code.
 The structure, comments, and class interactions help others understand the reasoning behind the design and how OOP concepts are applied in practice
 
-===================================================================================================================================================
+=================================================
 
 Inventory Item Management System
 
