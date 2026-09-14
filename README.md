@@ -1,58 +1,111 @@
-# IT5016-Software-Development-Fundamentals-I
-Simple Banking System – OOP Case Study
-Overview:
-This project is a simple banking system designed to demonstrate fundamental Object‑Oriented Programming (OOP) concepts such as:
+Simple Banking System (OOP Case Study)
+1. Project Overview
+This project implements a simple banking system using Object‑Oriented Programming (OOP) concepts.
+It includes three core classes:
 
+Account – manages account number and balance
+
+Customer – stores customer information
+
+Transaction – processes deposits and withdrawals
+
+The purpose of this project is to practice OOP fundamentals and demonstrate how software design principles guide clean, maintainable code.
+
+2. Software Design Principles Demonstrated
 Encapsulation
+Each class stores its own data internally:
+
+Account keeps balance and account_number inside the object.
+
+Customer stores name and its associated Account.
+
+Transaction stores transaction details.
+
+Access to these attributes happens only through methods such as deposit(), withdraw(), and display_balance().
+This protects the internal state and prevents accidental modification.
+
+Single Responsibility Principle (SRP)
+Each class has one clear responsibility:
+
+Account → handles money operations
+
+Customer → represents a person with an account
+
+Transaction → executes a deposit or withdrawal
+
+This separation makes the system easier to understand and extend.
 
 Abstraction
-Single Responsibility Principle (SRP)
-Object Interaction
-Basic class design
-The system includes three main classes:
-Account – manages account number and balance
-Customer – stores customer information
-Transaction – processes deposits and withdrawals
-Software Design Principles Demonstrated:
-1. Encapsulation
-Each class stores its own data internally.
-For example, the Account class keeps balance private to the object and exposes methods (deposit, withdraw) to modify it safely.
-2. Single Responsibility Principle (SRP)
-Each class has one clear purpose:
-Account → manages money
-Customer → represents a person with an account
-Transaction → handles transaction logic
-This separation improves readability and maintainability.
-3. Abstraction
-The user interacts with simple methods like:
-deposit(amount)
-withdraw(amount)
-display_balance()
-They do not need to know how the balance is stored or updated internally.
-4. Object Interaction
-Objects collaborate in a realistic way:
-A Customer has an Account
-A Transaction uses an Account to perform actions
-This models real‑world banking behavior.
-5. Loose Coupling
-Customer and Transaction interact with Account only through its public methods.
-This reduces dependency and makes the system easier to extend.
-Code Comments and Explanation:
-The code includes meaningful comments explaining:
-Why each class exists
-How OOP principles are applied
-Where improvements can be made
-Why certain design choices matter
-These comments help readers understand the thought process behind the design.
-Possible Improvements:
-To enhance the system further:
-Add transaction history
-Validate negative amounts
-Avoid executing logic inside constructors
-Use enums for transaction types
-Add error handling and logging
+The user interacts with simple methods:
 
-Conclusion
-This simple banking system is an effective demonstration of OOP fundamentals.
-It shows how classes interact, how responsibilities are separated, and how abstraction simplifies user interaction.
-The comments and structure make the code easy to understand, extend, and maintain
+deposit(amount)
+
+withdraw(amount)
+
+display_balance()
+
+They do not need to know how the balance is stored or updated internally.
+This hides complexity and provides a clean interface.
+
+Object Interaction (Composition)
+The classes work together:
+
+A Customer has an Account
+
+A Transaction uses an Account to perform actions
+
+This models real‑world banking behavior and shows how objects collaborate.
+
+Loose Coupling
+Customer and Transaction interact with Account only through its public methods.
+They do not access internal variables directly.
+This reduces dependency and makes future changes easier.
+
+3. Thought Process and Design Reasoning
+Why three classes?
+Separating the system into Account, Customer, and Transaction keeps responsibilities clear.
+It avoids mixing logic and makes the code easier to maintain.
+
+Why methods instead of direct variable access?
+Using methods like deposit() and withdraw() ensures:
+
+Validation can be added later
+
+Balance updates remain controlled
+
+The internal structure of the class can change without affecting other classes
+
+This is the essence of encapsulation.
+
+Why call display_balance() inside Customer?
+This demonstrates object interaction.
+A customer does not manage money directly; their account does.
+
+Why use a Transaction class?
+It separates transaction logic from account logic.
+This makes the system more modular and allows future extensions such as:
+
+Transaction history
+
+Different transaction types
+
+Logging and auditing
+
+4. Summary of Analysis
+This banking system demonstrates key OOP principles:
+
+Encapsulation protects data
+
+SRP keeps classes focused
+
+Abstraction hides complexity
+
+Object interaction models real‑world behavior
+
+Loose coupling makes the system flexible
+
+The design is simple but effective, showing how OOP helps structure code in a clear and maintainable way.
+
+5. Conclusion
+This project serves as a foundational example of how software design principles guide the creation of clean, organized, and scalable code.
+The structure, comments, and class interactions help others understand the reasoning behind the design and how OOP concepts are applied in practice
