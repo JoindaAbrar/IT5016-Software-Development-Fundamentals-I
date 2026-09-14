@@ -2,7 +2,9 @@
 Simple Banking System – OOP Case Study
 Overview:
 This project is a simple banking system designed to demonstrate fundamental Object‑Oriented Programming (OOP) concepts such as:
+
 Encapsulation
+
 Abstraction
 Single Responsibility Principle (SRP)
 Object Interaction
