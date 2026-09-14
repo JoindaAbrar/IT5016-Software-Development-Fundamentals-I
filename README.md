@@ -1,4 +1,5 @@
 Banking System (OOP Case Study)
+
 1. Project Overview:
 This project implements a simple banking system using Object‑Oriented Programming (OOP) concepts.
 It includes three core classes:
@@ -110,7 +111,10 @@ The design is simple but effective, showing how OOP helps structure code in a cl
 This project serves as a foundational example of how software design principles guide the creation of clean, organized, and scalable code.
 The structure, comments, and class interactions help others understand the reasoning behind the design and how OOP concepts are applied in practice
 
+===================================================================================================================================================
+
 Inventory Item Management System
+
 1. Project Overview
 This project demonstrates a simple inventory‑management system using Object‑Oriented Programming (OOP) concepts.
 It includes one main class:
