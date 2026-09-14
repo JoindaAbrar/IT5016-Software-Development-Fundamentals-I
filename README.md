@@ -1,5 +1,5 @@
 Simple Banking System (OOP Case Study)
-1. Project Overview
+1. Project Overview:
 This project implements a simple banking system using Object‑Oriented Programming (OOP) concepts.
 It includes three core classes:
 
